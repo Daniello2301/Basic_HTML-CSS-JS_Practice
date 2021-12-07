@@ -1,10 +1,10 @@
 /* in inicializate form for create of eventlistener submit */
 document.getElementById("form").addEventListener("submit", validate);
 
-/*Boolean Atribute validate for alert message  */
-
+/* Create function validate for form */
 function validate(event){
     
+    /*Boolean Atribute validate for alert message  */
     let enviar = true;
 
     /* the inputs is called for Id for use the text in for keyboard */
@@ -24,6 +24,9 @@ function validate(event){
 
         productoMessage.innerHTML = "Campo requerido";
         enviar = false;
+    }else{
+        productoMessage.innerHTML = "";
+        enviar = true;
     }
 
     /* Validation for input price */
@@ -37,6 +40,9 @@ function validate(event){
         priceMessage.innerHTML = "El precio debe ser mayor a 0";
         enviar = false;
 
+    }else{
+        priceMessage.innerHTML = "";
+        enviar = true;
     }
 
     /* Validation for input stock */
@@ -50,6 +56,9 @@ function validate(event){
         stockMessage.innerHTML = "El stock del porducto debe ser mayor a 0"
         enviar = false;
 
+    }else{
+        stockMessage.innerHTML = "";
+        enviar = true;
     }
 
     /* Conditional show alert confirm */
