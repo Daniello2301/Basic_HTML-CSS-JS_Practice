@@ -70,6 +70,7 @@
     height: auto;
     border-radius: 8px;
     margin-top:7rem;
+    padding: 2rem;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -86,6 +87,11 @@
     width: 80%;
     margin: 0px 10px 0px 10px;
 }
+.Form .form-group .input-group-text
+{
+    color: #252525;
+}
+.Form .form-group .Form .form-group span
 .Form .btn
 {
     color: #252525;
@@ -165,11 +171,118 @@
 }
 .content-product .buttons button
 {
-    background-color: #4FC6FF;
+    background-color: #2d7092;
     border: none;
     margin: 0px 1rem;
 }
 .content-product .buttons button:hover
 {
     background-color: #4CADDC;
+}
+/* ****************************************************************** */
+/* Styles for car */
+.car-container
+{
+    margin-top: 5.5rem;
+    margin-bottom: 3rem;
+}
+.item-car .product-item
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 70%;
+    padding:3px ;
+    margin: 5px auto;
+    border-radius: 10px;
+    box-shadow: 4px 4px 15px 5px rgba(0, 0, 0, 0.2);
+}
+/* Image */
+.product-item .image-product
+{
+    width: 11rem;
+
+}
+.product-item .image-product img
+{
+    width: 100%;
+}
+/* Tittle product */
+.product-item .name-product
+{
+    max-width: 8rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0px 3px;
+}
+.product-item .name-product h2
+{
+    font-size: 20px;
+    text-align: center;
+    color: #252525;
+}
+/* Price */
+.product-item .price-product
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0px .7rem;
+}
+.product-item .price-product p
+{
+    font-size: 21px;
+    color: #4CADDC;
+    font-weight: 700;
+}
+/* Quantity Product car */
+.product-item .quantity-product
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0px .7rem;
+}
+.product-item .quantity-product p
+{
+    font-size: 20px;
+    font-weight: 600;
+}
+/* Total products car */
+.product-item .total-product
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0px 1rem;
+}
+.product-item .total-product p
+{
+    font-size: 25px;
+    font-weight: 600;
+    color: #2d7092;
+}
+/* Button remove */
+.product-item .button-remove
+{   
+    width: 7rem;
+    display: flex;
+    justify-content: end;
+    align-items:center;
+    margin: 0px 3px;
+}
+.product-item .button-remove button
+{
+    vertical-align: bottom;
+    align-self: flex-end;
+    background-color: #4CADDC;
+    border: none;
+    color: #252525; 
+    font-weight: 500;  
+    letter-spacing: 1px;
+}
+.product-item .button-remove button:hover
+{
+    background-color: #2d7092;
 }
