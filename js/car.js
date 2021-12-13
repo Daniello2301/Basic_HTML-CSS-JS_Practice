@@ -68,12 +68,11 @@ function productItem(product) {
                 <button class="btn btn-danger">borrar</button>
             </div>    
         </div>
-
     `
 }
 
 document.getElementById("car-item").innerHTML = `
-    ${products.map(productItem)}
+    ${products.map(productItem).join("\n")}
 `
 
 
